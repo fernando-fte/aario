@@ -1,7 +1,33 @@
-// painel de estilos padrões
+// FUNÇÕES E VARIAVES //
+// 
 // Reseta autura de um box que contem elementos flutuantes
 .clearboth {&:after { content: " "; display: block; height: 0; clear: both; font-size: 0; visibility: hidden; }}
-
+// 
 // Alinha box no centro
 .boxcenter(@a:50) { @px: (@a - (@a*2)) + 0px; @pc: @a + 0%; margin: 0 auto;  position: relative;  top: @pc;  margin-top: @px;  display: inherit; }
+// 
+// 
+// // //
 
+// ESTILOS PADRÕES //
+// 
+// Botão do menu horizontal
+.btn-menu {
+    padding: 10px;
+    display: inline-block;
+    background-color: initial;
+    cursor: pointer;
+    width: 34%;
+
+    // icone do botão
+    .icon-bar{
+        width: 100%;
+        margin: 5px 0;
+        border: 2px solid #FFF;
+        display: block;
+        &:first-child{margin-top: 0px}
+        &:nth-child(3){margin-bottom: 0px;}
+    }
+    .glyphicon{display: none;}
+}
+// 
