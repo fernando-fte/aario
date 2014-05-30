@@ -2,5 +2,6 @@
 // Reseta autura de um box que contem elementos flutuantes
 .clearboth {&:after { content: " "; display: block; height: 0; clear: both; font-size: 0; visibility: hidden; }}
 
-
+// Alinha box no centro
+.boxcenter(@a:50) { @px: (@a - (@a*2)) + 0px; @pc: @a + 0%; margin: 0 auto;  position: relative;  top: @pc;  margin-top: @px;  display: inherit; }
 
