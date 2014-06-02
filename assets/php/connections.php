@@ -4,7 +4,7 @@ class _conecta{
     var $ip = 'localhost';
     var $user = 'root';
     var $pass = '';
-    var $database = 'meubanco';
+    var $database = 'aario';
 
     function AbreConexao(){
         $this->conn = mysql_connect($this->ip, $this->user, $this->pass) or die ( '<h1>erro ao selecionar Banco de dados</h1>' );

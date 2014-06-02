@@ -81,14 +81,14 @@
             </div>
 
             <!-- box do resultado -->
-            <div class="resultado-group container row" id="resultado">
+            <div class="resultado-group container row" id="resultado" data-template='child' data-pull-table="data" data-pull-select='{"index":"50"}'>
 
                 <!-- resultado unico -->
                 <div class="resultado-group-item panel panel-default col-md-4">
                     <div class="panel-body">
                         <!-- resultados principais -->
                         <span class="badge">2861</span>
-                        <h5><b>Fernando Truculo Evangelista</b></h5>
+                        <h5 data-template-value='{"teste":"text"}'><b>Fernando Truculo Evangelista</b></h5>
 
                         <!-- outros resultados 
                         <h6>No  Paciente: <b>2861. </b></h6>
@@ -125,14 +125,21 @@
         <!-- VENDOR js: jQuery -->
         <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script>
 
+        <!-- VENDOR js: Less - jquery  -->
+        <script type="text/javascript" src="assets/vendor/less/less.min.js"></script>
+
         <!-- VENDOR js: Bootstrap - jquery -->
         <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- VENDOR js: Coffee-Script - jquery -->
         <script type="text/javascript" src="assets/vendor/coffee-script/coffee-script.min.js"></script>
 
-        <!-- VENDOR js: Less - jquery  -->
-        <script type="text/javascript" src="assets/vendor/less/less.min.js"></script>
+        <!-- LIBRARY coffe: Plugin - pull databased -->
+        <script type="text/coffeescript" src="assets/library/coffee-script/pull.coffe"></script>
+
+        <script type="text/coffeescript">
+            $.pull_values $(document)
+        </script>
 
     </body>
 </html>

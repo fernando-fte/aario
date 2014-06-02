@@ -3,7 +3,7 @@ $.submt_post = (value) ->
     # value = valores para conexao e busca no banco
     $.ajax(
         type: "post"
-        url: "http://192.168.10.106/json/assets/php/json.php"
+        url: "http://localhost/aario/assets/php/json.php"
         cache: false
         #dataType: "json"
         data: value
